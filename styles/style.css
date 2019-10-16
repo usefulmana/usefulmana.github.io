@@ -1,0 +1,168 @@
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.intro {
+  z-index: 1;
+  font-size: 50px;
+  color: white;
+}
+
+p strong {
+  color: #ff3f82;
+}
+
+.view-works-btn {
+  border-width: medium;
+  background-color: transparent;
+  color: white;
+}
+
+.view-works-btn:hover {
+  border-color: #05c2c9;
+  background-color: #05c2c9;
+  color: white;
+}
+
+.contact {
+  background-color: #252933;
+}
+
+.contact header {
+  font-size: 50px;
+  color: white;
+  padding-top: 2.1em;
+  padding-bottom: 0.7em;
+}
+
+.contact p {
+  font-size: 20px;
+  color: #05c2c9;
+  padding-bottom: 2em;
+}
+
+.form {
+  padding-bottom: 5em;
+}
+
+.form input {
+  border-radius: 0;
+  border-color: #1B242F;
+  background-color: #1B242F;
+  margin-bottom: 0.3em;
+  width: 30%;
+}
+
+.form input::-webkit-input-placeholder {
+  color: white;
+}
+
+.form input:-ms-input-placeholder {
+  color: white;
+}
+
+.form input::-ms-input-placeholder {
+  color: white;
+}
+
+.form input::placeholder {
+  color: white;
+}
+
+.form textarea {
+  border-radius: 0;
+  border-color: #1B242F;
+  background-color: #1B242F;
+  margin-bottom: 0.3em;
+  width: 30%;
+  width: 50%;
+}
+
+.form textarea::-webkit-input-placeholder {
+  color: white;
+}
+
+.form textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.form textarea::-ms-input-placeholder {
+  color: white;
+}
+
+.form textarea::placeholder {
+  color: white;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.footer {
+  background-color: #1B242F;
+}
+
+.footer-text {
+  margin-left: -1.5em;
+  margin-bottom: -2.5em;
+}
+
+.footer-text strong {
+  color: white;
+}
+
+.footer-text span {
+  color: #ff3f82;
+}
+
+.social {
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-bottom: 3em;
+  color: white;
+}
+
+.social:hover {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  color: #05c2c9;
+}
+
+.fa-arrow-up {
+  margin-left: -1.5em;
+  color: white;
+}
+
+.fa-arrow-up:hover {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
+  color: #ff3f82;
+}
+/*# sourceMappingURL=style.css.map */

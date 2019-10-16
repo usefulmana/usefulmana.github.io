@@ -1,0 +1,10 @@
+@mixin formMixin {
+  border-radius: 0;
+  border-color: $secondaryBackgroundColor;
+  background-color: $secondaryBackgroundColor;
+  margin-bottom: 0.3em;
+  width: 30%;
+  &::placeholder {
+    color: $primaryTextColor;
+  }
+}

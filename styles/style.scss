@@ -1,0 +1,99 @@
+@import "./variables";
+@import "./mixins";
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+// Home CSS
+.intro {
+  z-index: 1;
+  font-size: 50px;
+  color: $primaryTextColor;
+}
+p {
+  strong {
+    color: $primaryPink;
+  }
+}
+
+.view-works-btn {
+  border-width: medium;
+  background-color: transparent;
+  color: $primaryTextColor;
+  &:hover {
+    border-color: $primaryBlue;
+    background-color: $primaryBlue;
+    color: $primaryTextColor;
+  }
+};
+// Contact CSS
+.contact{
+    background-color: $primaryBackgroundColor;
+    header{
+        font-size: 50px;
+        color: $primaryTextColor;
+        padding-top: 2.1em;
+        padding-bottom: 0.7em;
+    }
+    p{
+        font-size: 20px;
+        color: $primaryBlue;
+        padding-bottom: 2em;
+    }
+};
+
+.form {
+    padding-bottom: 5em;
+    input{
+        @include formMixin();
+    };
+    textarea{
+        @include formMixin();
+        width: 50%;
+    }
+}
+
+// Footer CSS
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.footer {
+  background-color: $secondaryBackgroundColor;
+}
+.footer-text{
+    margin-left:-1.5em;
+    margin-bottom: -2.5em;
+    strong{
+        color: $primaryTextColor;
+    };
+    span{
+        color:$primaryPink;
+    }
+}
+.social {
+  margin-top: 2em;
+  margin-right: 2em;
+  margin-bottom: 3em;
+  color: white;
+  &:hover {
+    animation: bounce 1s;
+    color: $primaryBlue;
+  }
+}
+.fa-arrow-up {
+  margin-left: -1.5em;
+  color: white;
+  &:hover {
+    animation: bounce 1s;
+    color: $primaryPink;
+  }
+}
