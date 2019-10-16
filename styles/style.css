@@ -49,9 +49,10 @@ p strong {
 .form input {
   border-radius: 0;
   border-color: #1B242F;
+  color: white;
   background-color: #1B242F;
   margin-bottom: 0.3em;
-  width: 30%;
+  width: 40% !important;
 }
 
 .form input::-webkit-input-placeholder {
@@ -70,13 +71,17 @@ p strong {
   color: white;
 }
 
+.form input:focus {
+  border-color: #05c2c9 !important;
+}
+
 .form textarea {
   border-radius: 0;
   border-color: #1B242F;
+  color: white;
   background-color: #1B242F;
   margin-bottom: 0.3em;
-  width: 30%;
-  width: 50%;
+  width: 40% !important;
 }
 
 .form textarea::-webkit-input-placeholder {
@@ -93,6 +98,10 @@ p strong {
 
 .form textarea::placeholder {
   color: white;
+}
+
+.form textarea:focus {
+  border-color: #05c2c9 !important;
 }
 
 @-webkit-keyframes bounce {

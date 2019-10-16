@@ -50,7 +50,6 @@ p {
     };
     textarea{
         @include formMixin();
-        width: 50%;
     }
 }
 
