@@ -10,6 +10,10 @@
   <link href="/styles/style.css" rel="stylesheet" />
   <link href="/styles/animate.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
@@ -34,38 +38,63 @@
   <!-- Home ends -->
 
   <!-- NavBar begins -->
+  <div class="navigation" id="nav">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start" id="menu-center">
+          <a class="navbar-item active" href="#home">
+            HOME
+          </a>
+
+          <a class="navbar-item" href="#about">
+            ABOUT
+          </a>
+
+          <a class="navbar-item" href="#portfolio">
+            PORTFOLIO
+          </a>
+          <a class="navbar-item" href="#contact">
+            CONTACT
+          </a>
+        </div>
+      </div>
+    </nav>
+    <hr/>
+  </div>
+ 
   <!-- NavBar ends -->
 
   <!-- About begins -->
+  <div id="about"></div>
   <!-- About ends -->
 
-  <!-- Projects begins -->
-  <!-- Projects ends -->
+  <!-- Portfolio begins -->
+  <div id="portfolio"></div>
+  <!-- Portfolio ends -->
 
   <!-- Contact begins -->
-  <div class="has-text-centered contact">
-    <div 
-    data-aos="fade-right" 
-    data-aos-offset="200" 
-    data-aos-delay="50" 
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out" 
-    data-aos-useClassName=true 
-    data-aos-once=true >
+  <div class="has-text-centered contact" id="contact">
+    <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="100" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-useClassName=true data-aos-once=true>
       <header>
         CONTACT
       </header>
+      <hr/>
       <p>Have a question or want to work together?</p>
     </div>
+    
 
-    <div 
-    data-aos="fade-left" 
-    data-aos-offset="200" 
-    data-aos-delay="200" 
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out" 
-    data-aos-useClassName=true 
-    data-aos-once=true >
+    <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="200" data-aos-duration="1000"
+      data-aos-easing="ease-in-out" data-aos-useClassName=true data-aos-once=true>
       <form class="form" action="https://formspree.io/alex.nguyen.3141@gmail.com" method="POST">
         <input class="input is-medium" type="text" placeholder="Name" name="name" required />
         <br />
@@ -74,13 +103,13 @@
         <input class="input is-medium" type="text" placeholder="Subject" name="subject" />
         <br />
         <div>
-           <textarea class="textarea is-medium" placeholder="Your Message" name="message" rows="6" required></textarea>
+          <textarea class="textarea is-medium" placeholder="Your Message" name="message" rows="6" required></textarea>
         </div>
         <br />
         <button class="button is-medium" type="submit" value="Send">SUBMIT</button>
       </form>
     </div>
-    
+
   </div>
   <!-- Contact ends -->
 
@@ -91,11 +120,11 @@
       <div class="padding">
         <div class="is-inline-flex">
 
-          <a href="https://t.me/alex_nguyen_3141" target="_blank"><i class="fab fa-2x social fa-telegram-plane"></i></a>
+          <a href="https://t.me/alex_nguyen_3141" target="_blank" title="Telegram"><i class="fab fa-2x social fa-telegram-plane"></i></a>
           <a href="https://www.linkedin.com/in/anh-nguyen-240872a7/" target="_blank"><i
-              class="fab social fa-2x fa-linkedin-in"></i></a>
-          <a href="mailto:alex.nguyen3141@gmail.com" target="_blank"><i class="far social fa-2x fa-envelope"></i></a>
-          <a href="https://github.com/usefulmana" target="_blank"><i class="fab fa-github-alt fa-2x social"></i></i></a>
+              class="fab social fa-2x fa-linkedin-in" title="Linkedin"></i></a>
+          <a href="mailto:alex.nguyen3141@gmail.com" target="_blank" title="Email"><i class="far social fa-2x fa-envelope"></i></a>
+          <a href="https://github.com/usefulmana" target="_blank" title="Github"><i class="fab fa-github-alt fa-2x social"></i></i></a>
         </div>
       </div>
       <p class="footer-text">
@@ -106,6 +135,10 @@
   <!-- Footer ends -->
 
   <!--Scripts-->
+  
+  <script src="scripts/burgerMenu.js"></script>
+  <script src="scripts/activeItem.js"></script>
+  <script src="scripts/stickyNavbar.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

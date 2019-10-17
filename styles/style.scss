@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./mixins";
 
-html{
+html {
   scroll-behavior: smooth;
   width: 100%;
   font-family: "Raleway", sans-serif;
@@ -21,48 +21,95 @@ p {
 
 .view-works-btn {
   @include buttonMixin;
-  &:hover{
-    .fa-arrow-right{
-      transition: 0.30s;
+  &:hover {
+    .fa-arrow-right {
+      transition: 0.3s;
       transform: rotate(90deg);
     }
   }
-};
+}
+
+// Navbar CSS
+.navbar {
+  background-color: $secondaryBackgroundColor;
+  .navbar-menu {
+    background-color: $secondaryBackgroundColor !important;
+  }
+  .navbar-start {
+    flex-grow: 1;
+    justify-content: center;
+  }
+  .navbar-item {
+    user-select: none;
+    margin-right: 1.5em;
+    color: $primaryTextColor;
+    &:hover {
+      user-select: none;
+      background-color: $secondaryBackgroundColor !important;
+      color: $primaryPink !important;
+    }
+  }
+}
+
+.active {
+    color: $primaryPink !important;
+}
+
+.navigation{
+  hr{
+    padding: 0px;
+    margin: 0px;
+    background-color: $primaryBlue;
+  }
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
 
 // Contact CSS
-.contact{
-    background-color: $primaryBackgroundColor;
-    header{
-        font-size: 50px;
-        color: $primaryTextColor;
-        padding-top: 2.1em;
-        padding-bottom: 0.7em;
-    }
-    p{
-        font-size: 20px;
-        color: $primaryBlue;
-        padding-bottom: 2em;
-    }
-};
+.contact {
+  background-color: $primaryBackgroundColor;
+  header {
+    font-size: 50px;
+    color: $primaryTextColor;
+    padding-top: 1.5em;
+    padding-bottom: 0.3em;
+  }
+  p {
+    font-size: 20px;
+    color: $primaryBlue;
+    padding-bottom: 2em;
+  }
+  hr{
+    @include lightBarMixin;
+  }
+}
 
 .form {
-    padding-bottom: 5em;
-    input{
-        @include formMixin();
-    };
-    textarea{
-        @include formMixin();
-        
-    };
-    button{
-      padding-left:2em;
-      padding-right:2em;
-      @include buttonMixin;
-    }
-    div{
-      margin: auto;
-      width: 40% !important;
-    }
+  padding-bottom: 5em;
+  input {
+    @include formMixin();
+  }
+  textarea {
+    @include formMixin();
+  }
+  button {
+    padding-left: 2em;
+    padding-right: 2em;
+    @include buttonMixin;
+  }
+  div {
+    margin: auto;
+    width: 40% !important;
+  }
 }
 
 // Footer CSS
@@ -80,15 +127,15 @@ p {
 .footer {
   background-color: $secondaryBackgroundColor;
 }
-.footer-text{
-    margin-left:-1.5em;
-    margin-bottom: -2.5em;
-    strong{
-        color: $primaryTextColor;
-    };
-    span{
-        color:$primaryPink;
-    }
+.footer-text {
+  margin-left: -1.5em;
+  margin-bottom: -2.5em;
+  strong {
+    color: $primaryTextColor;
+  }
+  span {
+    color: $primaryPink;
+  }
 }
 .social {
   margin-top: 2em;

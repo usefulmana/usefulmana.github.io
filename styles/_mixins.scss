@@ -24,3 +24,12 @@
     color: $primaryTextColor;
   }
 }
+
+@mixin lightBarMixin {
+    height: 4px;
+    width: 4%;
+    margin: 0px;
+    margin-left: 48%;
+    padding: 0px;
+    margin-bottom: 1.3em;
+}

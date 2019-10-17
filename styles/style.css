@@ -28,10 +28,66 @@ p strong {
 }
 
 .view-works-btn:hover .fa-arrow-right {
-  -webkit-transition: 0.30s;
-  transition: 0.30s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.navbar {
+  background-color: #1B242F;
+}
+
+.navbar .navbar-menu {
+  background-color: #1B242F !important;
+}
+
+.navbar .navbar-start {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .navbar-item {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-right: 1.5em;
+  color: white;
+}
+
+.navbar .navbar-item:hover {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-color: #1B242F !important;
+  color: #ff3f82 !important;
+}
+
+.active {
+  color: #ff3f82 !important;
+}
+
+.navigation hr {
+  padding: 0px;
+  margin: 0px;
+  background-color: #05c2c9;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
 }
 
 .contact {
@@ -41,14 +97,23 @@ p strong {
 .contact header {
   font-size: 50px;
   color: white;
-  padding-top: 2.1em;
-  padding-bottom: 0.7em;
+  padding-top: 1.5em;
+  padding-bottom: 0.3em;
 }
 
 .contact p {
   font-size: 20px;
   color: #05c2c9;
   padding-bottom: 2em;
+}
+
+.contact hr {
+  height: 4px;
+  width: 4%;
+  margin: 0px;
+  margin-left: 48%;
+  padding: 0px;
+  margin-bottom: 1.3em;
 }
 
 .form {
