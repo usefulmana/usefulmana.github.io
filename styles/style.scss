@@ -1,10 +1,12 @@
 @import "./variables";
 @import "./mixins";
 
-body {
+html{
+  scroll-behavior: smooth;
   width: 100%;
   font-family: "Raleway", sans-serif;
 }
+
 // Home CSS
 .intro {
   z-index: 1;
@@ -18,15 +20,15 @@ p {
 }
 
 .view-works-btn {
-  border-width: medium;
-  background-color: transparent;
-  color: $primaryTextColor;
-  &:hover {
-    border-color: $primaryBlue;
-    background-color: $primaryBlue;
-    color: $primaryTextColor;
+  @include buttonMixin;
+  &:hover{
+    .fa-arrow-right{
+      transition: 0.30s;
+      transform: rotate(90deg);
+    }
   }
 };
+
 // Contact CSS
 .contact{
     background-color: $primaryBackgroundColor;
@@ -50,6 +52,16 @@ p {
     };
     textarea{
         @include formMixin();
+        
+    };
+    button{
+      padding-left:2em;
+      padding-right:2em;
+      @include buttonMixin;
+    }
+    div{
+      margin: auto;
+      width: 40% !important;
     }
 }
 
@@ -84,7 +96,7 @@ p {
   margin-bottom: 3em;
   color: white;
   &:hover {
-    animation: bounce 1s;
+    animation: bounce 1s infinite;
     color: $primaryBlue;
   }
 }
@@ -92,7 +104,7 @@ p {
   margin-left: -1.5em;
   color: white;
   &:hover {
-    animation: bounce 1s;
+    animation: bounce 1s infinite;
     color: $primaryPink;
   }
 }

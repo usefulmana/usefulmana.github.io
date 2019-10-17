@@ -6,9 +6,21 @@
   margin-bottom: 0.3em;
   width: 40% !important;
   &::placeholder {
-    color: $primaryTextColor;
+    color: $placeholderTextColor;
   }
-  &:focus{
-      border-color: $primaryBlue !important;
+  &:focus {
+    border-color: $primaryBlue !important;
+  }
+}
+
+@mixin buttonMixin {
+  border-radius: 0;
+  border-width: medium;
+  color: $primaryTextColor;
+  background-color: $secondaryBackgroundColor;
+  &:hover {
+    border-color: $primaryBlue;
+    background-color: $primaryBlue;
+    color: $primaryTextColor;
   }
 }

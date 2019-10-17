@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
   <link href="/styles/style.css" rel="stylesheet" />
+  <link href="/styles/animate.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 </head>
 
 <body>
   <!-- Home begins -->
   <div id="home" class="hero is-fullheight">
-    <div class="intro hero-body animated bounce">
+    <div class="intro hero-body">
       <p class="animated fadeInLeft slower">
         Hello, I'm <strong> Alex Nguyen. </strong>
         <br />
@@ -23,8 +25,8 @@
         </span>
         <br />
         <br />
-        <a class="button is-outlined is-large view-works-btn">
-          My Works &nbsp;<i class="fas fa-arrow-down"></i>
+        <a class="button is-outlined is-large view-works-btn animated fadeInUp delay-2s">
+          My Works &nbsp;<i class="fas fa-arrow-right"></i>
         </a>
       </p>
     </div>
@@ -42,17 +44,43 @@
 
   <!-- Contact begins -->
   <div class="has-text-centered contact">
-    <header>
-      CONTACT
-    </header>
-    <p>Have a question or want to work together?</p>
-    <div class="form">
-      <input class="input is-medium" type="text" placeholder="Name" required/>
-      <br/>
-      <input class="input is-medium" type="email" placeholder="Email Address" required/>
-      <br/>
-      <textarea class="textarea" placeholder="Your Message" rows="8"></textarea>
+    <div 
+    data-aos="fade-right" 
+    data-aos-offset="200" 
+    data-aos-delay="50" 
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" 
+    data-aos-useClassName=true 
+    data-aos-once=true >
+      <header>
+        CONTACT
+      </header>
+      <p>Have a question or want to work together?</p>
     </div>
+
+    <div 
+    data-aos="fade-left" 
+    data-aos-offset="200" 
+    data-aos-delay="200" 
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out" 
+    data-aos-useClassName=true 
+    data-aos-once=true >
+      <form class="form" action="https://formspree.io/alex.nguyen.3141@gmail.com" method="POST">
+        <input class="input is-medium" type="text" placeholder="Name" name="name" required />
+        <br />
+        <input class="input is-medium" type="email" placeholder="Email Address" name="_replyto" required />
+        <br />
+        <input class="input is-medium" type="text" placeholder="Subject" name="subject" />
+        <br />
+        <div>
+           <textarea class="textarea is-medium" placeholder="Your Message" name="message" rows="6" required></textarea>
+        </div>
+        <br />
+        <button class="button is-medium" type="submit" value="Send">SUBMIT</button>
+      </form>
+    </div>
+    
   </div>
   <!-- Contact ends -->
 
@@ -78,6 +106,10 @@
   <!-- Footer ends -->
 
   <!--Scripts-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/vendor/three.r92.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/tengbao/vanta/dist/vanta.globe.min.js"></script>
   <script>
