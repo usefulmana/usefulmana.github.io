@@ -20,7 +20,7 @@ $(document).ready(function() {
         {
           scrollTop: $target.offset().top + 2
         },
-        500,
+        200,
         'swing',
         function() {
           window.location.hash = target;

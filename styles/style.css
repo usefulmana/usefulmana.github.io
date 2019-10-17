@@ -90,6 +90,123 @@ p strong {
   padding-top: 102px;
 }
 
+.about header {
+  font-size: 50px;
+  color: black;
+  padding-top: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+.about hr {
+  height: 4px;
+  width: 4%;
+  margin: 0px;
+  margin-left: 48%;
+  padding: 0px;
+  margin-bottom: 1.3em;
+  background-color: black;
+}
+
+.portfolio {
+  background-color: #F5F5F5;
+}
+
+.portfolio header {
+  font-size: 50px;
+  color: black;
+  padding-top: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+.portfolio hr {
+  height: 4px;
+  width: 4%;
+  margin: 0px;
+  margin-left: 48%;
+  padding: 0px;
+  margin-bottom: 1.3em;
+  background-color: black;
+}
+
+#wrap-scroll {
+  position: relative;
+  max-height: 200px;
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  /* background: #eee; */
+  overflow: auto;
+  padding-right: 20px;
+  -webkit-mask: url(#masking);
+          mask: url(#masking);
+  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, black), color-stop(1, transparent));
+}
+
+#wrap-scroll::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+#wrap-scroll ul {
+  list-style: none;
+  position: relative;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  top: 50px;
+}
+
+#wrap-scroll ul, #wrap-scroll ul li {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#wrap-scroll ul li {
+  height: 50px;
+  line-height: 50px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  overflow: hidden;
+}
+
+#wrap-scroll ul li:last-of-type {
+  padding-bottom: 50px;
+}
+
+#wrap-scroll ul li.active .item {
+  -webkit-transform: scale(1.9);
+          transform: scale(1.9);
+}
+
+#wrap-scroll ul li .item {
+  position: relative;
+  -webkit-transition: -webkit-transform 200ms;
+  transition: -webkit-transform 200ms;
+  transition: transform 200ms;
+  transition: transform 200ms, -webkit-transform 200ms;
+  display: inline-block;
+}
+
+.scroll-item {
+  font-size: 25px;
+  color: #05c2c9;
+}
+
+.scroll-item:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#repo {
+  padding-bottom: 5em;
+}
+
 .contact {
   background-color: #252933;
 }
