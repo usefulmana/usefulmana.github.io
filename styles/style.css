@@ -90,6 +90,11 @@ p strong {
   padding-top: 102px;
 }
 
+.about {
+  padding-bottom: 3em;
+  background-color: "";
+}
+
 .about header {
   font-size: 50px;
   color: black;
@@ -108,6 +113,7 @@ p strong {
 }
 
 .portfolio {
+  padding-bottom: 3em;
   background-color: #F5F5F5;
 }
 
@@ -119,6 +125,28 @@ p strong {
 }
 
 .portfolio hr {
+  height: 4px;
+  width: 4%;
+  margin: 0px;
+  margin-left: 48%;
+  padding: 0px;
+  margin-bottom: 1.3em;
+  background-color: black;
+}
+
+.my-repo {
+  padding-bottom: 3em;
+  background-color: "";
+}
+
+.my-repo header {
+  font-size: 50px;
+  color: black;
+  padding-top: 1.5em;
+  padding-bottom: 0.3em;
+}
+
+.my-repo hr {
   height: 4px;
   width: 4%;
   margin: 0px;
@@ -201,10 +229,6 @@ p strong {
 .scroll-item:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-#repo {
-  padding-bottom: 5em;
 }
 
 .contact {

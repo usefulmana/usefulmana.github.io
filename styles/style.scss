@@ -75,29 +75,20 @@ p {
 
 // About CSS
 .about {
-  header {
-    @include headerMixin(black);
-  }
-  hr{
-    @include lightBarMixin;
-    background-color: black;
-  }
+  @include panelMixin(black,'',3)
 }
 
 
 // Portfolio CSS
 
 .portfolio {
-  background-color: $tertiaryBackgroundColor;
-  header {
-    @include headerMixin(black);
-  }
-  hr{
-    @include lightBarMixin;
-    background-color: black;
-  }
+  @include panelMixin(black,$tertiaryBackgroundColor,3)
 }
 
+// Repo CSS
+.my-repo {
+  @include panelMixin(black,'',3)
+}
 
 #wrap-scroll {
   position: relative;
@@ -154,9 +145,6 @@ p {
   }
 }
 
-#repo{
-  padding-bottom: 5em;
-}
 // Contact CSS
 .contact {
   background-color: $primaryBackgroundColor;

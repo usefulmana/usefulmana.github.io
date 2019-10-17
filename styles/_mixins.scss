@@ -40,3 +40,15 @@
     padding-top: 1.5em;
     padding-bottom: 0.3em;
 }
+
+@mixin panelMixin($textColor, $backgroundColor, $pad-bot){
+  padding-bottom: $pad-bot + em;
+  background-color: $backgroundColor;
+  header {
+    @include headerMixin($textColor);
+  }
+  hr{
+    @include lightBarMixin;
+    background-color: $textColor;
+  }
+}
