@@ -52,11 +52,11 @@ p {
 }
 
 .active {
-    color: $primaryPink !important;
+  color: $primaryPink !important;
 }
 
-.navigation{
-  hr{
+.navigation {
+  hr {
     padding: 0px;
     margin: 0px;
     background-color: $primaryBlue;
@@ -65,7 +65,7 @@ p {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
@@ -75,19 +75,42 @@ p {
 
 // About CSS
 .about {
-  @include panelMixin(black,'',3)
+  @include panelMixin(black, "", 3);
+  .column {
+    font-size: 25px;
+    strong {
+      margin-bottom: 0.5em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
 }
-
+.frame-work {
+  strong {
+    font-size: 25px;
+  }
+}
+.is-inline-block {
+  img {
+    margin-top: 3em;
+    margin-left: 2em;
+    margin-right: 2em;
+    &:hover {
+      animation: bounce 1s infinite;
+    }
+  }
+}
 
 // Portfolio CSS
 
 .portfolio {
-  @include panelMixin(black,$tertiaryBackgroundColor,3)
+  @include panelMixin(black, $tertiaryBackgroundColor, 3);
 }
 
 // Repo CSS
 .my-repo {
-  @include panelMixin(black,'',3)
+  @include panelMixin(black, "", 3);
 }
 
 #wrap-scroll {
@@ -101,20 +124,27 @@ p {
   padding-right: 20px;
   mask: url(#masking);
   &::-webkit-scrollbar {
-    width: 0px;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
   }
-  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, black), color-stop(1, transparent));
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, black),
+    color-stop(1, transparent)
+  );
 }
 
 #wrap-scroll ul {
   list-style: none;
   position: relative;
-  transition: transform .3s;
+  transition: transform 0.3s;
   top: 50px;
 }
 
-#wrap-scroll ul, #wrap-scroll ul li {
+#wrap-scroll ul,
+#wrap-scroll ul li {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -123,13 +153,17 @@ p {
 #wrap-scroll ul li {
   height: 50px;
   line-height: 50px;
-  transition: transform .3s;
+  transition: transform 0.3s;
   overflow: hidden;
 }
 
-#wrap-scroll ul li:last-of-type { padding-bottom: 50px; }
+#wrap-scroll ul li:last-of-type {
+  padding-bottom: 50px;
+}
 
-#wrap-scroll ul li.active .item { transform: scale(1.9); }
+#wrap-scroll ul li.active .item {
+  transform: scale(1.9);
+}
 
 #wrap-scroll ul li .item {
   position: relative;
@@ -137,10 +171,10 @@ p {
   display: inline-block;
 }
 
-.scroll-item{
+.scroll-item {
   font-size: 25px;
   color: $primaryBlue;
-  &:hover{
+  &:hover {
     transform: scale(1.2);
   }
 }
@@ -156,7 +190,7 @@ p {
     color: $primaryBlue;
     padding-bottom: 2em;
   }
-  hr{
+  hr {
     @include lightBarMixin;
   }
 }

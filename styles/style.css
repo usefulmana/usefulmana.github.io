@@ -112,6 +112,33 @@ p strong {
   background-color: black;
 }
 
+.about .column {
+  font-size: 25px;
+}
+
+.about .column strong {
+  margin-bottom: 0.5em;
+}
+
+.about .column li {
+  margin-bottom: 0.5em;
+}
+
+.frame-work strong {
+  font-size: 25px;
+}
+
+.is-inline-block img {
+  margin-top: 3em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.is-inline-block img:hover {
+  -webkit-animation: bounce 1s infinite;
+          animation: bounce 1s infinite;
+}
+
 .portfolio {
   padding-bottom: 3em;
   background-color: #F5F5F5;
@@ -180,14 +207,15 @@ p strong {
 #wrap-scroll ul {
   list-style: none;
   position: relative;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   top: 50px;
 }
 
-#wrap-scroll ul, #wrap-scroll ul li {
+#wrap-scroll ul,
+#wrap-scroll ul li {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -196,10 +224,10 @@ p strong {
 #wrap-scroll ul li {
   height: 50px;
   line-height: 50px;
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   overflow: hidden;
 }
 
