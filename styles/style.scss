@@ -107,10 +107,24 @@ p {
 .portfolio {
   @include panelMixin(black, $tertiaryBackgroundColor, 3);
 }
+.is-inline-block .project-image{
+  margin-left:0;
+  margin-right:0;
+  margin-top:1.5em;
+  &:hover{
+    animation: none;
+  }
+}
 
 // Repo CSS
 .my-repo {
   @include panelMixin(black, "", 3);
+}
+.github-btn{
+  @include buttonMixin;
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 
 #wrap-scroll {

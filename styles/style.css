@@ -161,6 +161,17 @@ p strong {
   background-color: black;
 }
 
+.is-inline-block .project-image {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1.5em;
+}
+
+.is-inline-block .project-image:hover {
+  -webkit-animation: none;
+          animation: none;
+}
+
 .my-repo {
   padding-bottom: 3em;
   background-color: "";
@@ -181,6 +192,22 @@ p strong {
   padding: 0px;
   margin-bottom: 1.3em;
   background-color: black;
+}
+
+.github-btn {
+  border-radius: 0;
+  border-width: medium;
+  color: white;
+  background-color: #1B242F;
+  background-color: white;
+  color: black;
+  border-color: black;
+}
+
+.github-btn:hover {
+  border-color: #05c2c9;
+  background-color: #05c2c9;
+  color: white;
 }
 
 #wrap-scroll {
