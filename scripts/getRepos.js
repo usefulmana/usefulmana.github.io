@@ -1,5 +1,4 @@
-// const credentials = require('../credentials/credentials.json')
-// console.log(credentials)
+
 $(document).ready(function() {
   $.ajax({
     type: 'GET',
@@ -16,6 +15,7 @@ $(document).ready(function() {
         info: false,
         paging: false,
         searching: false,
+        responsive: true,
         columns: [
           { data: 'name' },
           { data: 'stargazers_count' },
@@ -24,7 +24,8 @@ $(document).ready(function() {
             data: 'html_url',
             render: function(data, type, row, meta) {
               if (type === 'display') {
-                data = '<a href="' + data + '" target="_blank">' + data + '</a>';
+                data =
+                  '<a href="' + data + '" target="_blank">' + "Link" + '</a>';
               }
 
               return data;
