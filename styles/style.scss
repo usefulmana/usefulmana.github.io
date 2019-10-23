@@ -126,6 +126,13 @@ p {
   color: black;
   border-color: black;
 }
+#repo_table{
+  margin: 0 auto;
+  margin-bottom: 1em;
+  th{
+    text-align: center;
+  }
+}
 
 #wrap-scroll {
   position: relative;

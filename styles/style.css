@@ -210,6 +210,15 @@ p strong {
   color: white;
 }
 
+#repo_table {
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+#repo_table th {
+  text-align: center;
+}
+
 #wrap-scroll {
   position: relative;
   max-height: 200px;
