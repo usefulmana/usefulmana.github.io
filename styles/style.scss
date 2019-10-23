@@ -134,71 +134,71 @@ p {
   }
 }
 
-#wrap-scroll {
-  position: relative;
-  max-height: 200px;
-  width: 100%;
-  max-width: 100%;
-  margin: auto;
-  /* background: #eee; */
-  overflow: auto;
-  padding-right: 20px;
-  mask: url(#masking);
-  &::-webkit-scrollbar {
-    width: 0px; /* Remove scrollbar space */
-    background: transparent; /* Optional: just make scrollbar invisible */
-  }
-  -webkit-mask-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.5, black),
-    color-stop(1, transparent)
-  );
-}
+// #wrap-scroll {
+//   position: relative;
+//   max-height: 200px;
+//   width: 100%;
+//   max-width: 100%;
+//   margin: auto;
+//   /* background: #eee; */
+//   overflow: auto;
+//   padding-right: 20px;
+//   mask: url(#masking);
+//   &::-webkit-scrollbar {
+//     width: 0px; /* Remove scrollbar space */
+//     background: transparent; /* Optional: just make scrollbar invisible */
+//   }
+//   -webkit-mask-image: -webkit-gradient(
+//     linear,
+//     left bottom,
+//     left top,
+//     color-stop(0.5, black),
+//     color-stop(1, transparent)
+//   );
+// }
 
-#wrap-scroll ul {
-  list-style: none;
-  position: relative;
-  transition: transform 0.3s;
-  top: 50px;
-}
+// #wrap-scroll ul {
+//   list-style: none;
+//   position: relative;
+//   transition: transform 0.3s;
+//   top: 50px;
+// }
 
-#wrap-scroll ul,
-#wrap-scroll ul li {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
+// #wrap-scroll ul,
+// #wrap-scroll ul li {
+//   margin: 0;
+//   padding: 0;
+//   text-align: center;
+// }
 
-#wrap-scroll ul li {
-  height: 50px;
-  line-height: 50px;
-  transition: transform 0.3s;
-  overflow: hidden;
-}
+// #wrap-scroll ul li {
+//   height: 50px;
+//   line-height: 50px;
+//   transition: transform 0.3s;
+//   overflow: hidden;
+// }
 
-#wrap-scroll ul li:last-of-type {
-  padding-bottom: 50px;
-}
+// #wrap-scroll ul li:last-of-type {
+//   padding-bottom: 50px;
+// }
 
-#wrap-scroll ul li.active .item {
-  transform: scale(1.9);
-}
+// #wrap-scroll ul li.active .item {
+//   transform: scale(1.9);
+// }
 
-#wrap-scroll ul li .item {
-  position: relative;
-  transition: transform 200ms;
-  display: inline-block;
-}
+// #wrap-scroll ul li .item {
+//   position: relative;
+//   transition: transform 200ms;
+//   display: inline-block;
+// }
 
-.scroll-item {
-  font-size: 25px;
-  color: $primaryBlue;
-  &:hover {
-    transform: scale(1.2);
-  }
-}
+// .scroll-item {
+//   font-size: 25px;
+//   color: $primaryBlue;
+//   &:hover {
+//     transform: scale(1.2);
+//   }
+// }
 
 // Contact CSS
 .contact {
