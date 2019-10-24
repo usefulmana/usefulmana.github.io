@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
   <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet" />
   <link href="/styles/style.css" rel="stylesheet" />
+  <link href="/styles/hover_box.css" rel="stylesheet" />
   <link href="/styles/animate.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -136,7 +137,6 @@
   </div>
   <!-- two columns . On the left, list bio. on the right list skills-->
   <!-- About ends -->
-
   <!-- Portfolio begins -->
   <!-- Lightbox pics? on click create a modal? -->
   <div id="portfolio" class="has-text-centered portfolio">
@@ -148,18 +148,61 @@
       <hr />
       <div>
         <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="500" data-aos-duration="1000"
-          data-aos-easing="ease-in-out" data-aos-useClassName=true data-aos-once=true>
-          <div class="is-inline-block">
-            <img class="project-image" src="images/project_images/thumb-3.jpg" alt="">
+          data-aos-easing="ease-in-out" data-aos-useClassName=true data-aos-once=true class="is-inline-block">
+          <div class="hvrbox hvrbox_background" style="background-image: url(images/project_images/thumb-3.jpg);">
+            <div class="hvrbox-layer_top">
+              <br/>
+              <br/>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Ullam eveniet voluptatibus et dolor facere accusamus, at accusantium placeat quidem culpa rerum, 
+              excepturi blanditiis impedit nisi saepe ad cum sapiente quas?
+              <br/>
+              <br/>
+              <br/>
+              <div class="is-inline-block"> 
+                <a class="button is-medium port-btn" href="https://github.com/usefulmana/Spring_Boot_Movie_REST" target="_blank">View Code</a>
+                <a class="button is-medium port-btn">Website</a>
+              </div>
+            </div>
           </div>
 
-          <div class="is-inline-block">
-            <img class="project-image" src="images/project_images/thumb-3.jpg" alt="">
+
+          <div class="hvrbox hvrbox_background" style="background-image: url(images/project_images/thumb-3.jpg);">
+            <div class="hvrbox-layer_top">
+              <br/>
+              <br/>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Ullam eveniet voluptatibus et dolor facere accusamus, at accusantium placeat quidem culpa rerum, 
+              excepturi blanditiis impedit nisi saepe ad cum sapiente quas?
+              <br/>
+              <br/>
+              <br/>
+              <div class="is-inline-block">
+                <a class="button is-medium port-btn" href="https://github.com/usefulmana/spring_boot_hospital_management" target="_blank">View Code</a>
+                <a class="button is-medium port-btn">Website</a>
+              </div>
+            </div>
           </div>
 
-          <div class="is-inline-block">
-            <img class="project-image" src="images/project_images/thumb-3.jpg" alt="">
+
+           <div class="hvrbox hvrbox_background" style="background-image: url(images/project_images/thumb-3.jpg);">
+            <div class="hvrbox-layer_top">
+              <br/>
+              <br/>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Ullam eveniet voluptatibus et dolor facere accusamus, at accusantium placeat quidem culpa rerum, 
+              excepturi blanditiis impedit nisi saepe ad cum sapiente quas?
+              <br/>
+              <br/>
+              <br/>
+              <div class="is-inline-block">
+                <a class="button is-medium port-btn">View Code</a>
+                <a class="button is-medium port-btn">Website</a>
+              </div>
+              
+            </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -193,8 +236,8 @@
         </thead>
       </table>
     </div>
-      
-  
+
+
     <br />
     <div>
       <a class="button is-large github-btn" href="https://github.com/usefulmana" target="_blank">
@@ -245,7 +288,6 @@
       <a href="#home"><i class="fas fa-2x fa-arrow-up" title="Go Up"></i></a>
       <div class="padding">
         <div class="is-inline-flex">
-
           <a href="https://t.me/alex_nguyen_3141" target="_blank" title="Telegram"><i
               class="fab fa-2x social fa-telegram-plane"></i></a>
           <a href="https://www.linkedin.com/in/anh-nguyen-240872a7/" target="_blank"><i
@@ -255,6 +297,7 @@
           <a href="https://github.com/usefulmana" target="_blank" title="Github"><i
               class="fab fa-github-alt fa-2x social"></i></i></a>
         </div>
+
       </div>
       <p class="footer-text">
         <strong>ALEX NGUYEN</strong> <span>&copy;2019</span></a>.
@@ -264,7 +307,8 @@
   <!-- Footer ends -->
 
   <!--Scripts-->
-  <script src="scripts/getRepos.js"></script>
+  <!-- <script src="scripts/getRepos.js"></script> -->
+  <!-- <script src="scripts/modalToggle.js"></script> -->
   <script type="text/javascript" charset="utf8"
     src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
   <script src="scripts/burgerMenu.js"></script>

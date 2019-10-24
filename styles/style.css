@@ -140,6 +140,21 @@ p strong {
           animation: bounce 1s infinite;
 }
 
+.port-btn {
+  border-radius: 0;
+  border-width: medium;
+  color: white;
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+}
+
+.port-btn:hover {
+  border-color: #05c2c9;
+  background-color: #05c2c9;
+  color: white;
+}
+
 .portfolio {
   padding-bottom: 3em;
   background-color: #F5F5F5;

@@ -105,7 +105,19 @@ p {
 }
 
 // Portfolio CSS
-
+.port-btn{
+  border-radius: 0;
+  border-width: medium;
+  color: white;
+  background-color:transparent;
+  width: 150px;
+  height: 50px;
+  &:hover{
+    border-color: $primaryBlue;
+    background-color: $primaryBlue;
+    color: $primaryTextColor;
+  }
+}
 .portfolio {
   @include panelMixin(black, $tertiaryBackgroundColor, 3);
 }
