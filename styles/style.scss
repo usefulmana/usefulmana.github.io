@@ -199,7 +199,6 @@ p {
   background-color: $secondaryBackgroundColor;
 }
 .footer-text {
-  margin-left: -1.5em;
   margin-bottom: -2.5em;
   strong {
     color: $primaryTextColor;
@@ -211,7 +210,7 @@ p {
 .social {
   margin-top: 2em;
   margin-right: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
   color: white;
   &:hover {
     animation: bounce 1s infinite;
@@ -219,10 +218,13 @@ p {
   }
 }
 .fa-arrow-up {
-  margin-left: -1.5em;
+  margin-left: 0 auto;
   color: white;
   &:hover {
     animation: bounce 1s infinite;
     color: $primaryPink;
   }
+}
+.padding{
+  margin-left: 4.5em;
 }

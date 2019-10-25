@@ -378,7 +378,6 @@ p strong {
 }
 
 .footer-text {
-  margin-left: -1.5em;
   margin-bottom: -2.5em;
 }
 
@@ -393,7 +392,7 @@ p strong {
 .social {
   margin-top: 2em;
   margin-right: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2.5em;
   color: white;
 }
 
@@ -404,7 +403,7 @@ p strong {
 }
 
 .fa-arrow-up {
-  margin-left: -1.5em;
+  margin-left: 0 auto;
   color: white;
 }
 
@@ -412,5 +411,9 @@ p strong {
   -webkit-animation: bounce 1s infinite;
           animation: bounce 1s infinite;
   color: #ff3f82;
+}
+
+.padding {
+  margin-left: 4.5em;
 }
 /*# sourceMappingURL=style.css.map */
