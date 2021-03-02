@@ -5,7 +5,7 @@ $(document).ready(function() {
         `https://api.github.com/user/repos?type=public&sort=updated&direction=desc`,
       dataType: 'json',
       headers: {
-        Authorization: `token ${GH_API_KEY}`
+        Authorization: "token bd739aa3f03025844eda3f346855a8c15bd82e25"
       },
       success: function(repos) {
         $('#repo_table').DataTable({
