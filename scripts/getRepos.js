@@ -2,11 +2,8 @@ $(document).ready(function() {
     $.ajax({
       type: 'GET',
       url:
-        `https://api.github.com/user/repos?type=public&sort=updated&direction=desc`,
+        `https://api.github.com/users/usefulmana/repos?type=public&sort=updated&direction=desc`,
       dataType: 'json',
-      headers: {
-        Authorization: "token bd739aa3f03025844eda3f346855a8c15bd82e25"
-      },
       success: function(repos) {
         $('#repo_table').DataTable({
           data: repos.slice(0, 10),
