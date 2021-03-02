@@ -1,12 +1,11 @@
 $(document).ready(function() {
-  $.getJSON('../credentials/credentials.json', function(credentials) {
     $.ajax({
       type: 'GET',
       url:
-        'https://api.github.com/user/repos?type=public&sort=updated&direction=desc',
+        `https://api.github.com/user/repos?type=public&sort=updated&direction=desc`,
       dataType: 'json',
       headers: {
-        Authorization: 'Basic ' + btoa(credentials.username + ':' + credentials.password)
+        Authorization: `token ${GH_API_KEY}`
       },
       success: function(repos) {
         $('#repo_table').DataTable({
@@ -36,5 +35,4 @@ $(document).ready(function() {
         });
       }
     });
-  });
 });
